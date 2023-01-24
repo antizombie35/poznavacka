@@ -1,0 +1,57 @@
+body{
+    background-color: aquamarine;
+}
+
+h1 {
+    text-align: center;
+    font-family: tahoma;
+}
+
+#githubButton {
+    background-color: aqua;
+    font-size: 8pt;
+    font-family: verdana;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    position:absolute;
+    bottom:0;
+    left:0;
+    border-radius: 7px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+#toListButton {
+    background-color: aqua;
+    font-size: 8pt;
+    font-family: verdana;
+    margin-left: 100px;
+    margin-bottom: 10px;
+    position:absolute;
+    bottom:0;
+    left:0;
+    border-radius: 7px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+p {
+    text-align: center;
+    color: black;
+    font-size:xx-large;
+    font-family: verdana;
+}
+
+img {
+    max-width:350px;
+    max-height:350px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.divA {
+    background-color: #00E0E0;
+}

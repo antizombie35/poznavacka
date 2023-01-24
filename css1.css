@@ -1,4 +1,4 @@
- body{
+body{
     background-color: aquamarine;
 }
 
@@ -7,21 +7,35 @@ h1 {
     font-family: tahoma;
 }
 
- #githubButton {
+#githubButton {
     background-color: aqua;
-     font-size: 8pt;
-     font-family: verdana;
-     margin-left: 5px;
-     margin-bottom: 10px;
-     position:absolute;
-     bottom:0;
-     left:0;
-     border-radius: 7px;
-     padding-left: 4px;
-     padding-right: 4px;
+    font-size: 8pt;
+    font-family: verdana;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    position:absolute;
+    bottom:0;
+    left:0;
+    border-radius: 7px;
+    padding-left: 4px;
+    padding-right: 4px;
  }
 
- img {
+#toListButton {
+    background-color: aqua;
+    font-size: 8pt;
+    font-family: verdana;
+    margin-left: 100px;
+    margin-bottom: 10px;
+    position:absolute;
+    bottom:0;
+    left:0;
+    border-radius: 7px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+img {
     max-width:350px;
     max-height:350px;
     width: auto;
