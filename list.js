@@ -12,6 +12,7 @@ function loadPage() {
         for (let j = 0; j < data[i].src.length; j++) {
             const image = document.createElement("img");
             image.src = data[i].src[j];
+            image.alt = "chrobák / motýle"
             image.style.display = "block";
             image.style.margin = "auto";
             imagesContainer.appendChild(image);
