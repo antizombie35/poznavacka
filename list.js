@@ -1,5 +1,4 @@
 
-  
 function loadPage() {
     for (let i = 0; i < data.length; i++) {
         const div = document.createElement("div");
@@ -26,4 +25,8 @@ function loadPage() {
 
         document.body.appendChild(div);
     }
+}
+
+function nextPic() {
+    //empty
 }
