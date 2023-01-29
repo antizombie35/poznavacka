@@ -11,6 +11,8 @@ img {
     margin-top: 50px;
     max-width:100vw;
     max-height:65vh;
+    min-height: 65vh;
+    min-width: 60vh;
     width: auto;
     height: auto;
     display: block;
