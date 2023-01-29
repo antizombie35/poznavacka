@@ -1,7 +1,15 @@
+body{
+    background-color: #45454F;
+}
+
 #githubButton {
-    background-color: aqua;
-    font-size: 8pt;
-    font-family: verdana;
+    color: white;
+    border: white;
+    background-color: #28282B;
+    font-size: 12pt;
+    font-family: Dejavu Sans;
+    font-style: normal;
+    font-variant: normal;
     margin-left: 5px;
     margin-bottom: 10px;
     position:fixed;
@@ -13,10 +21,14 @@
 }
 
 #toListButton {
-    background-color: aqua;
-    font-size: 8pt;
-    font-family: verdana;
-    margin-left: 60px;
+    color: white;
+    border: white;
+    background-color: #28282B;
+    font-size: 12pt;
+    font-family: Dejavu Sans;
+    font-style: normal;
+    font-variant: normal;
+    margin-left: 70px;
     margin-bottom: 10px;
     position:fixed;
     bottom:0;
@@ -27,10 +39,14 @@
 }
 
 #debugButton {
-    background-color: aqua;
-    font-size: 8pt;
-    font-family: verdana;
-    margin-left: 95px;
+    color: white;
+    border: white;
+    background-color: #28282B;
+    font-size: 12pt;
+    font-family: Dejavu Sans;
+    font-style: normal;
+    font-variant: normal;
+    margin-left: 110px;
     margin-bottom: 10px;
     position:fixed;
     bottom:0;
@@ -38,4 +54,8 @@
     border-radius: 7px;
     padding-left: 4px;
     padding-right: 4px;
+}
+
+img {
+    border-radius: 10px;
 }
