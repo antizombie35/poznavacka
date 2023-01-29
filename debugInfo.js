@@ -23,12 +23,11 @@ function getDebugInfo() {
     alert("Made by: " + contributors + "\n--DEBUG INFO--\nFV: " + functionVersion + "\nDV: " + dataVersion + "\nBUILD: " + buildVersion);
 }
 
-window.onload = function() {
+window.onload = function() { //TODO preload imgs
     /*for (var y = 0; y < data.length; y++) {
         for (let i = 0; i < data[y].src.length; i++) {
             new Image().src = data[y].src[i];
         }
     }*/
     getHash();
-    alert("Tato stránka je v betě a pracuje se na ní, jestli jste objevili probém tak ho na DISCORDU popište popř. přiložte debug info.") //TODO
 }
