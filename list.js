@@ -30,3 +30,7 @@ function loadPage() {
 function nextPic() {
     //empty
 }
+
+window.onload = function () {
+    getHash();
+}
