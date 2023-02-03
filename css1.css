@@ -10,7 +10,7 @@
 img {
     margin-top: 50px;
     max-width:95vw;
-    max-height:65vh;
+    max-height:60vh;
     width: auto;
     height: auto;
     display: block;
@@ -50,7 +50,7 @@ p {
 }
 
 #picDiv {
-    height: 65vh;
+    height: 60vh;
 }
 
 #ansDiv {
