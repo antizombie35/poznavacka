@@ -1,5 +1,5 @@
-var functionVersion = "1.8";
-var dataVersion = "1.2";
+var functionVersion = "1.9";
+var dataVersion = "1.3";
 var buildVersion = "0";
 var contributors = "A35, H34";
 var gotBuildHash = false;
@@ -10,7 +10,7 @@ var data = [
     {id: 2, srcImg: [], rAns: "Rybenka domácí", src: ["https://www.dewolf.cz/wp-content/uploads/2019/07/rybenka1.jpg","https://www.krejsashop.cz/userfiles/blog/big/blg-142-14.jpg"]},
     {id: 3, srcImg: [], rAns: "Šídlo modré", src: ["https://www.biolib.cz/IMG/GAL/19020.jpg","https://www.vazky.net/wp-content/uploads/sites/19/2021/03/Aeshna-cyanea-sidlo-modre-IMG_2231-Edit.jpg","https://www.vazky.net/wp-content/uploads/sites/19/2021/03/Aeshna-cyanea-2007_-09_-22-11_-53_-31_-petrovice.jpg"]},
     {id: 4, srcImg: [], rAns: "Vážka ploská", src: ["https://upload.wikimedia.org/wikipedia/commons/a/af/Female_Libellula_depressa_bgiu.jpg","https://upload.wikimedia.org/wikipedia/commons/8/8e/Platetrum_depressum_1_Luc_Viatour.JPG"]},
-    {id: 5, srcImg: [], rAns: "Šváb obecný", src: ["https://www.hubeniskudcu.cz/images/svab_obecny.png?crc=222240164","http://www.brouci.cz/files/web200/clanky/svab-obecny-a-rus-domaci.jpg"]},
+    {id: 5, srcImg: [], rAns: "Šváb obecný", src: ["https://www.hubeniskudcu.cz/images/svab_obecny.png?crc=222240164","https://www.adera.cz/wp-content/themes/adera/images/svab1.jpg"]},
     {id: 6, srcImg: [], rAns: "Rus domácí", src: ["https://www.krejsashop.cz/userfiles/blog/big/blg-140-14.jpg","https://upload.wikimedia.org/wikipedia/commons/1/17/Blatella_germanica_p1160206.jpg"]},
     {id: 7, srcImg: [], rAns: "Škvor obecný", src: ["http://www.chovzvirat.cz/images/zvirata/skvor-obecny_rih70xm.jpg","https://upload.wikimedia.org/wikipedia/commons/3/34/Earwig_on_white_background.jpg"]},
     {id: 8, srcImg: [], rAns: "Kudlanka nábožná", src: ["http://www.chovzvirat.cz/images/zvirata/kudlanka-nabozna_oej98si.jpg","https://www.ceska-krajina.cz/wp-content/uploads/2019/08/ceska-krajina-kudlanka-nabozna-wikimedia-premysl-malek.jpg"]},
@@ -19,7 +19,7 @@ var data = [
     {id: 11, srcImg: [], rAns: "Cvrček polní", src: ["https://tvorove.cz/wp-content/uploads/2021/05/Houslovy_virtuoz_Cvrcek_polni_2-e1621098993837-1000x667.jpg","https://upload.wikimedia.org/wikipedia/commons/1/10/Gryllus_campestris_MHNT.jpg"]},
     {id: 12, srcImg: [], rAns: "Krtononožka obecná", src: ["https://upload.wikimedia.org/wikipedia/commons/c/cd/Gryllotalpa_gryllotalpa_MHNT.jpg","http://www.chovzvirat.cz/images/zvirata/krtonozka-obecna_sqx56ek.jpg"]},
     {id: 14, srcImg: [], rAns: "Saranče stěhovavé", src: ["https://upload.wikimedia.org/wikipedia/commons/b/bc/Saran%C4%8De_st%C4%9Bhovav%C3%A1_9054.jpg","https://plus.rozhlas.cz/sites/default/files/images/03045780.jpeg"]},
-    {id: 15, srcImg: [], rAns: "Veš dětská", src: ["http://www.chovzvirat.cz/images/zvirata/ves-detska_azb11hv.jpg","http://4a.upol.cz/images/ves01.jpg","https://www.macrophotography.cz/photos/none-478.jpg"]},
+    {id: 15, srcImg: [], rAns: "Veš dětská", src: ["http://www.chovzvirat.cz/images/zvirata/ves-detska_azb11hv.jpg","https://www.macrophotography.cz/photos/none-478.jpg"]},
     {id: 16, srcImg: [], rAns: "Veš muňka", src: ["http://www.chovzvirat.cz/images/zvirata/ves-munka_jle58rm.jpg","https://upload.wikimedia.org/wikipedia/commons/6/69/Crab_louse_%28251_23%29_Female%2C_from_a_human_host.jpg"]},
     {id: 17, srcImg: [], rAns: "Třásněnka západní", src: ["https://img.primadoma.cz/w_10/24/9f/column/249f2bbcd6ad9ec22dda13c632061058_trasnenka.jpg","https://www.levnepostriky.cz/i/gallery/20130209151710_strapka.jpg"]},
     {id: 18, srcImg: [], rAns: "Pěnodějka obecná", src: ["http://www.chovzvirat.cz/images/zvirata/penodejka-obecna_ygm10ud.jpg","https://upload.wikimedia.org/wikipedia/commons/f/fc/Aphrophoridae_-_Philaenus_spumarius-1.JPG"]},
@@ -32,7 +32,7 @@ var data = [
     {id: 25, srcImg: [], rAns: "Štěnice domácí", src: ["https://upload.wikimedia.org/wikipedia/commons/8/87/Bed_bug%2C_Cimex_lectularius.jpg","https://www.krejsashop.cz/userfiles/blog/big/blg-144-14.jpg"]},
     {id: 26, srcImg: [], rAns: "Bruslařka", src: ["https://upload.wikimedia.org/wikipedia/commons/1/1d/Water_strider_Gerris_lacustris.jpg","http://nature.unas.cz/wp-content/uploads/2016/06/gerris2.jpg"]},
     {id: 27, srcImg: [], rAns: "Vodoměrka", src: ["https://upload.wikimedia.org/wikipedia/commons/0/00/Hydrometra_stagnorum01.jpg","https://cdn.administrace.tv/2022/04/23/medium_169/158d1e6a6efc2e6b5c373d0ccf3b8c66.jpg"]},
-    {id: 28, srcImg: [], rAns: "Zlatoočka skvrnitá", src: ["https://upload.wikimedia.org/wikipedia/commons/0/06/Chrysoperla.carnea.jpg","http://www.naturabohemica.cz/images/Chrysopa_perla_4303.jpg"]},
+    {id: 28, srcImg: [], rAns: "Zlatoočka skvrnitá", src: ["https://upload.wikimedia.org/wikipedia/commons/0/06/Chrysoperla.carnea.jpg","https://www.biolib.cz/IMG/GAL/5414.jpg"]},
     {id: 29, srcImg: [], rAns: "Mravkolev běžný", src: ["https://upload.wikimedia.org/wikipedia/commons/7/7f/Myrmeleon_pictifrons.jpg","http://www.chovzvirat.cz/images/zvirata/mravkolev-bezny_mzj84tl.jpg"]},
     {id: 30, srcImg: [], rAns: "Pilořitka", src: ["https://www.skudci.com/files/piloritka-velka-teaser_0.jpg","https://upload.wikimedia.org/wikipedia/commons/3/34/Urocerus_gigas4.jpg"]},
     {id: 31, srcImg: [], rAns: "Ploskohřbetka", src: ["https://deti.vls.cz/data/web/brevire/hmyz/cephalcia-abietis-autor-jakub-beranek.jpg","http://www.chovzvirat.cz/images/zvirata/ploskohrbetka-smrkova_bqe33ek.jpg"]},
@@ -49,11 +49,11 @@ var data = [
     {id: 42, srcImg: [], rAns: "Střevlík měděný", src: ["https://upload.wikimedia.org/wikipedia/commons/a/a7/Carabus_cancellatus03.jpg","https://www.biolib.cz/IMG/GAL/154273.jpg"]},
     {id: 43, srcImg: [], rAns: "Krajník pižmový", src: ["http://www.chovzvirat.cz/images/zvirata/krajnik-pizmovy_blk13bh.jpg","https://upload.wikimedia.org/wikipedia/commons/1/1c/Calosoma_sycophanta.JPG"]},
     {id: 44, srcImg: [], rAns: "Potápník vroubený", src: ["https://www.biolib.cz/IMG/GAL/36998.jpg","https://upload.wikimedia.org/wikipedia/commons/6/67/Gelbrandk%C3%A4fer_%28Dytiscus_marginalis%29.jpg"]},
-    {id: 45, srcImg: [], rAns: "Vodomil černý", src: ["https://upload.wikimedia.org/wikipedia/commons/e/ed/Gro%C3%9Fer_Kolbenwasserk%C3%A4fer_Hydrous_piceus_1.jpg","http://www.nasepriroda.cz/incimgs2/npr-201503-0004_05_6.jpg"]},
+    {id: 45, srcImg: [], rAns: "Vodomil černý", src: ["https://upload.wikimedia.org/wikipedia/commons/e/ed/Gro%C3%9Fer_Kolbenwasserk%C3%A4fer_Hydrous_piceus_1.jpg"]},
     {id: 46, srcImg: [], rAns: "Hrobařík obecný", src: ["http://www.chovzvirat.cz/images/zvirata/hrobarik-obecny_ezk61zs.jpg","https://upload.wikimedia.org/wikipedia/commons/7/70/Krompootdoodgraver_Nicrophorus_vespillo_achter_grassprietje.jpg"]},
     {id: 47, srcImg: [], rAns: "Světluška menší", src: ["https://upload.wikimedia.org/wikipedia/commons/8/87/Lamprohiza_splendidula01.jpg","http://www.chovzvirat.cz/images/zvirata/svetluska-mensi_izh05bj.jpg"]},
     {id: 48, srcImg: [], rAns: "Kovařík černoskvrnný", src: ["https://www.biolib.cz/IMG/GAL/252374.jpg","https://www.biolib.cz/IMG/GAL/268034.jpg"]},
-    {id: 49, srcImg: [], rAns: "Krasec měďák", src: ["http://www.naturabohemica.cz/wp-content/uploads/2008/09/img_5279.jpg","http://www.chovzvirat.cz/images/zvirata/krasec-medak_ywf70xt.jpg"]},
+    {id: 49, srcImg: [], rAns: "Krasec měďák", src: ["https://www.biolib.cz/IMG/GAL/252214.jpg","http://www.chovzvirat.cz/images/zvirata/krasec-medak_ywf70xt.jpg"]},
     {id: 50, srcImg: [], rAns: "Slunéčko sedmitečné", src: ["https://g.denik.cz/109/1e/76896-slunecko_hydra-640-16x9.jpg","http://www.chovzvirat.cz/images/zvirata/slunecko-sedmitecne_bae13pm.jpg"]},
     {id: 51, srcImg: [], rAns: "Červotoč umrlčí", src: ["https://www.veselebydleni.cz/files/galeria/mag/2018_2/cervotoc-umrlci.jpeg","http://www.chovzvirat.cz/images/zvirata/cervotoc-umrlci_lue60ww.jpg"]},
     {id: 52, srcImg: [], rAns: "Majka obecná", src: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Meloe_proscarabaeus%2C_Odessa.jpg/800px-Meloe_proscarabaeus%2C_Odessa.jpg","http://www.chovzvirat.cz/images/zvirata/majka-obecna_hrb68ov.jpg"]},
