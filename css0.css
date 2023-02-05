@@ -59,3 +59,10 @@ body{
 img {
     border-radius: 10px;
 }
+
+/*
+* {
+    box-sizing: border-box;
+    outline: 3px solid limegreen !important;
+}
+*/
