@@ -1,4 +1,4 @@
-var functionVersion = "1.10";
+var functionVersion = "1.11";
 var dataVersion = "1.3";
 var buildVersion = "0";
 var contributors = "A35, H34";
