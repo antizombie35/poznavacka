@@ -1,5 +1,5 @@
-var functionVersion = "1.11";
-var dataVersion = "1.3";
+var functionVersion = "1.12";
+var dataVersion = "1.4";
 var buildVersion = "0";
 var contributors = "A35, H34";
 var gotBuildHash = false;
@@ -36,13 +36,13 @@ var data = [
     {id: 29, srcImg: [], rAns: "Mravkolev běžný", src: ["https://upload.wikimedia.org/wikipedia/commons/7/7f/Myrmeleon_pictifrons.jpg","http://www.chovzvirat.cz/images/zvirata/mravkolev-bezny_mzj84tl.jpg"]},
     {id: 30, srcImg: [], rAns: "Pilořitka", src: ["https://www.skudci.com/files/piloritka-velka-teaser_0.jpg","https://upload.wikimedia.org/wikipedia/commons/3/34/Urocerus_gigas4.jpg"]},
     {id: 31, srcImg: [], rAns: "Ploskohřbetka", src: ["https://deti.vls.cz/data/web/brevire/hmyz/cephalcia-abietis-autor-jakub-beranek.jpg","http://www.chovzvirat.cz/images/zvirata/ploskohrbetka-smrkova_bqe33ek.jpg"]},
-    {id: 32, srcImg: [], rAns: "Žlabatka", src: ["https://leporelo.info/pics/pic/zlabatky.jpg","https://www.blanokridlivpraze.cz/obrazky/2016/63238-zlabatka-dubova-halka.jpg","https://upload.wikimedia.org/wikipedia/commons/b/b6/Cynips_quercusfolii.jpg"]},
-    {id: 33, srcImg: [], rAns: "Lumek", src: ["https://upload.wikimedia.org/wikipedia/commons/1/1c/Rhyssa_persuasoria.jpg","http://www.chovzvirat.cz/images/zvirata/lumek-veliky_pwf00xg.jpg"]},
-    {id: 34, srcImg: [], rAns: "Lumčík", src: ["https://www.irozhlas.cz/sites/default/files/styles/zpravy_fotogalerie_large/public/images/02422477.jpeg?itok=Ngi_zb5a","http://www.chovzvirat.cz/images/zvirata/lumcik-zlutonohy_mbg51we.jpg"]},
+    {id: 32, srcImg: [], rAns: "Babočka admirál", src: ["https://upload.wikimedia.org/wikipedia/commons/5/5f/2018_07_R%C3%BCgen_Admiral.jpg","https://upload.wikimedia.org/wikipedia/commons/1/16/Vanessa_atalanta2.jpg","https://upload.wikimedia.org/wikipedia/commons/c/cc/Vanessa_atalanta_-_Admiral_%28illustration%29.jpg"]},
+    {id: 33, srcImg: [], rAns: "Lumek velký", src: ["https://upload.wikimedia.org/wikipedia/commons/1/1c/Rhyssa_persuasoria.jpg","http://www.chovzvirat.cz/images/zvirata/lumek-veliky_pwf00xg.jpg"]},
+    {id: 34, srcImg: [], rAns: "Lumčík žlutonohý", src: ["https://www.irozhlas.cz/sites/default/files/styles/zpravy_fotogalerie_large/public/images/02422477.jpeg?itok=Ngi_zb5a","http://www.chovzvirat.cz/images/zvirata/lumcik-zlutonohy_mbg51we.jpg"]},
     {id: 35, srcImg: [], rAns: "Kutilky", src: ["https://upload.wikimedia.org/wikipedia/commons/5/5c/Sceliphron_curvatum_02.JPG","https://www.najdije.cz/wp-content/uploads/2019/11/kutilka-asijska-600-edit-2-e1573264168567.jpg"]},
     {id: 36, srcImg: [], rAns: "Samotářské včely", src: ["https://upload.wikimedia.org/wikipedia/commons/9/9f/Megachile_lagopoda_1.jpg","https://www.zelenadomacnost.com/blog/wp-content/uploads/2020/03/valch%C3%A1%C5%99ka-Denis-2.jpg"]},
     {id: 37, srcImg: [], rAns: "Mravenci všežravý", src: ["https://www.deratizator.cz/images/bt_portfolio/6/original/aec15131dede94e330a239ae5cd888e5.jpeg","https://www.krejsashop.cz/userfiles/blog/big/blg-126-14.jpg"]},
-    {id: 38, srcImg: [], rAns: "Vosa", src: ["https://tvorove.cz/wp-content/uploads/2021/06/Vosa_obecna_mala_bojovnice_2-1000x667.jpg","https://upload.wikimedia.org/wikipedia/commons/2/24/Vespula_germanica.jpg"]},
+    {id: 38, srcImg: [], rAns: "Vosa útočná", src: ["https://tvorove.cz/wp-content/uploads/2021/06/Vosa_obecna_mala_bojovnice_2-1000x667.jpg","https://upload.wikimedia.org/wikipedia/commons/2/24/Vespula_germanica.jpg"]},
     {id: 39, srcImg: [], rAns: "Sršeň", src: ["https://upload.wikimedia.org/wikipedia/commons/1/1a/160921_Hornisse_01.jpg","https://upload.wikimedia.org/wikipedia/commons/a/ab/Vespa_crabro-lateral.jpeg"]},
     {id: 40, srcImg: [], rAns: "Čmeláci", src: ["https://www.receptyprimanapadu.cz/wp-content/uploads/2020/04/iStock-638135966.jpg","https://1884403144.rsc.cdn77.org/foto/cmelak/MHgwL3NtYXJ0L3RoYg/5-full-3494829.jpg?v=3&st=4IsKXKeNN2hxJINAIlPjP4LL3Dl6z6v9Bjd35UtVAuk&ts=1600812000&e=0"]},
     {id: 41, srcImg: [], rAns: "Včela medonosná", src: ["http://www.chovzvirat.cz/images/zvirata/vcela-medonosna_amw36ui.jpg","https://cdn.wander-book.com/images/vizitky/detail/vcela-medonosna-22162.jpg"]},
@@ -58,7 +58,7 @@ var data = [
     {id: 51, srcImg: [], rAns: "Červotoč umrlčí", src: ["https://www.veselebydleni.cz/files/galeria/mag/2018_2/cervotoc-umrlci.jpeg","http://www.chovzvirat.cz/images/zvirata/cervotoc-umrlci_lue60ww.jpg"]},
     {id: 52, srcImg: [], rAns: "Majka obecná", src: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Meloe_proscarabaeus%2C_Odessa.jpg/800px-Meloe_proscarabaeus%2C_Odessa.jpg","http://www.chovzvirat.cz/images/zvirata/majka-obecna_hrb68ov.jpg"]},
     {id: 53, srcImg: [], rAns: "Potemník moučný", src: ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Tenebrio_molitor_MHNT.jpg/1024px-Tenebrio_molitor_MHNT.jpg","https://www.krejsashop.cz/userfiles/blog/big/blg-138-14.jpg"]},
-    {id: 54, srcImg: [], rAns: "Rroháč obecný", src: ["https://www.biolib.cz/IMG/GAL/BIG/387090.jpg","http://www.chovzvirat.cz/images/zvirata/rohac-obecny_wst82cz.jpg"]},
+    {id: 54, srcImg: [], rAns: "Roháč obecný", src: ["https://www.biolib.cz/IMG/GAL/BIG/387090.jpg","http://www.chovzvirat.cz/images/zvirata/rohac-obecny_wst82cz.jpg"]},
     {id: 55, srcImg: [], rAns: "Chroust obecný", src: ["http://www.chovzvirat.cz/images/zvirata/chroust-obecny_lcb24ip.jpg","https://cdn.myshoptet.com/usr/www.pasti.cz/user/documents/upload/detail-chrousta.jpg"]},
     {id: 56, srcImg: [], rAns: "Vruboun posvátný", src: ["https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Scarabaeus.sacer.jpg/1280px-Scarabaeus.sacer.jpg","https://www.biolib.cz/IMG/GAL/379679.jpg"]},
     {id: 57, srcImg: [], rAns: "Chrobák velký", src: ["https://hmyz.estranky.cz/img/original/4775/chrobak-velky--3-.jpg","https://www.biolib.cz/IMG/GAL/312846.jpg"]},
@@ -74,7 +74,7 @@ var data = [
     {id: 67, srcImg: [], rAns: "Bejlomorka buková", src: ["https://svabblog.files.wordpress.com/2017/03/img_446311.jpg","http://www.chovzvirat.cz/images/zvirata/bejlomorka-bukova_yvc16kt.jpg"]},
     {id: 68, srcImg: [], rAns: "Muchnička", src: ["https://i.iinfo.cz/images/450/muchnicka-2.jpg","https://www.skudci.com/files/muchnicka-3.jpg"]},
     {id: 69, srcImg: [], rAns: "Ovád hovězí", src: ["https://www.biolib.cz/IMG/GAL/BIG/322470.jpg","https://www.krejsashop.cz/userfiles/blog/big/blg-128-14.jpg"]},
-    {id: 70, srcImg: [], rAns: "Vtule třešňová", src: ["https://www.biolib.cz/IMG/GAL/127658.jpg","https://upload.wikimedia.org/wikipedia/commons/9/96/Tephritidae_-_Rhagoletis_cerasi.JPG"]},
+    {id: 70, srcImg: [], rAns: "Vrtule třešňová", src: ["https://www.biolib.cz/IMG/GAL/127658.jpg","https://upload.wikimedia.org/wikipedia/commons/9/96/Tephritidae_-_Rhagoletis_cerasi.JPG"]},
     {id: 71, srcImg: [], rAns: "Octomilky obecné", src: ["https://img.ceskyinternet.cz/clanky/og/160077343231.jpg","http://www.chovzvirat.cz/images/zvirata/octomilka-obecna_xqn30gb.jpg"]},
     {id: 72, srcImg: [], rAns: "Moucha domácí", src: ["https://www.biolib.cz/IMG/GAL/230277.jpg","https://upload.wikimedia.org/wikipedia/commons/8/8f/Musca_domestica_September_2007-1.jpg"]},
     {id: 73, srcImg: [], rAns: "Masařka obecná", src: ["http://www.chovzvirat.cz/images/zvirata/masarka-obecna_kyf00un.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/A_Fly_by_Matthias_Zimmermann.jpg/270px-A_Fly_by_Matthias_Zimmermann.jpg"]},
@@ -96,5 +96,6 @@ var data = [
     {id: 89, srcImg: [], rAns: "Bourec morušový", src: ["https://www.cojeco.cz/images/descript/d5168119e0e5d32e3d4f8a105bb7fb9b.jpg","https://www.biolib.cz/IMG/GAL/217309.jpg"]},
     {id: 90, srcImg: [], rAns: "Bekyně mniška", src: ["http://motyli.kolas.cz/foto/bekyne/velke/14717405.jpg","https://upload.wikimedia.org/wikipedia/commons/1/1f/Lymantria_monacha_%E2%99%82_-_Black_arches_%28male%29_-_%D0%9C%D0%BE%D0%BD%D0%B0%D1%88%D0%B5%D0%BD%D0%BA%D0%B0_%28%D1%81%D0%B0%D0%BC%D0%B5%D1%86%29_%2827003797058%29.jpg"]},
     {id: 91, srcImg: [], rAns: "Přástevník medvědí", src: ["https://www.dhphoto.cz/photos/prastevnik-medvedi-arctia-caja-4800.jpg","http://www.chovzvirat.cz/images/zvirata/prastevnik-medvedi_bns73cd.jpg"]},
-    {id: 92, srcImg: [], rAns: "Babočka admirál", src: ["https://upload.wikimedia.org/wikipedia/commons/5/5f/2018_07_R%C3%BCgen_Admiral.jpg","https://upload.wikimedia.org/wikipedia/commons/1/16/Vanessa_atalanta2.jpg","https://upload.wikimedia.org/wikipedia/commons/c/cc/Vanessa_atalanta_-_Admiral_%28illustration%29.jpg"]},
+    {id: 92, srcImg: [], rAns: "Žlabatka duběnková", src: ["https://www.biolib.cz/IMG/GAL/BIG/403680.jpg","https://www.biolib.cz/IMG/GAL/BIG/403677.jpg"]},
+    {id: 93, srcImg: [], rAns: "Žlabatka růžová", src: ["http://www.chovzvirat.cz/images/zvirata/zlabatka-ruzova_ucu24gp.jpg","https://www.bylinkyprovsechny.cz/images/byliny-bylinky-fotografie-obrazek/zlabatka-ruzova.jpg"]},
 ]
