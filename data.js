@@ -1,5 +1,5 @@
 var functionVersion = "1.12";
-var dataVersion = "1.6";
+var dataVersion = "1.7";
 var buildVersion = "0";
 var contributors = "A35, H34";
 var gotBuildHash = false;
@@ -41,7 +41,7 @@ var data = [
     {id: 34, srcImg: [], rAns: "Lumčík žlutonohý", src: ["https://www.irozhlas.cz/sites/default/files/styles/zpravy_fotogalerie_large/public/images/02422477.jpeg?itok=Ngi_zb5a","http://www.chovzvirat.cz/images/zvirata/lumcik-zlutonohy_mbg51we.jpg"]},
     {id: 35, srcImg: [], rAns: "Kutilky", src: ["https://upload.wikimedia.org/wikipedia/commons/5/5c/Sceliphron_curvatum_02.JPG","https://www.najdije.cz/wp-content/uploads/2019/11/kutilka-asijska-600-edit-2-e1573264168567.jpg"]},
     {id: 36, srcImg: [], rAns: "Samotářské včely", src: ["https://upload.wikimedia.org/wikipedia/commons/9/9f/Megachile_lagopoda_1.jpg","https://www.zelenadomacnost.com/blog/wp-content/uploads/2020/03/valch%C3%A1%C5%99ka-Denis-2.jpg"]},
-    {id: 37, srcImg: [], rAns: "Mravenec všežravý", src: ["https://www.deratizator.cz/images/bt_portfolio/6/original/aec15131dede94e330a239ae5cd888e5.jpeg","https://www.krejsashop.cz/userfiles/blog/big/blg-126-14.jpg"]},
+    {id: 37, srcImg: [], rAns: "Mravenec lesní", src: ["https://upload.wikimedia.org/wikipedia/commons/7/78/A_Formica_rufa_sideview.jpg","https://upload.wikimedia.org/wikipedia/commons/b/be/Mrowka_rudnica_formica_rufa_small.jpg"]},
     {id: 38, srcImg: [], rAns: "Vosa útočná", src: ["https://tvorove.cz/wp-content/uploads/2021/06/Vosa_obecna_mala_bojovnice_2-1000x667.jpg","https://upload.wikimedia.org/wikipedia/commons/2/24/Vespula_germanica.jpg"]},
     {id: 39, srcImg: [], rAns: "Sršeň", src: ["https://upload.wikimedia.org/wikipedia/commons/1/1a/160921_Hornisse_01.jpg","https://upload.wikimedia.org/wikipedia/commons/a/ab/Vespa_crabro-lateral.jpeg"]},
     {id: 40, srcImg: [], rAns: "Čmelák", src: ["https://www.receptyprimanapadu.cz/wp-content/uploads/2020/04/iStock-638135966.jpg","https://1884403144.rsc.cdn77.org/foto/cmelak/MHgwL3NtYXJ0L3RoYg/5-full-3494829.jpg?v=3&st=4IsKXKeNN2hxJINAIlPjP4LL3Dl6z6v9Bjd35UtVAuk&ts=1600812000&e=0"]},
@@ -98,4 +98,6 @@ var data = [
     {id: 91, srcImg: [], rAns: "Přástevník medvědí", src: ["https://www.dhphoto.cz/photos/prastevnik-medvedi-arctia-caja-4800.jpg","http://www.chovzvirat.cz/images/zvirata/prastevnik-medvedi_bns73cd.jpg"]},
     {id: 92, srcImg: [], rAns: "Žlabatka duběnková", src: ["https://www.biolib.cz/IMG/GAL/BIG/403680.jpg","https://www.biolib.cz/IMG/GAL/BIG/403677.jpg"]},
     {id: 93, srcImg: [], rAns: "Žlabatka růžová", src: ["http://www.chovzvirat.cz/images/zvirata/zlabatka-ruzova_ucu24gp.jpg","https://www.bylinkyprovsechny.cz/images/byliny-bylinky-fotografie-obrazek/zlabatka-ruzova.jpg"]},
+    {id: 94, srcImg: [], rAns: "Mravenec faraon", src: ["https://www.hubeniskudcu.cz/images/mravenec%20farao.jpg?crc=468982995","https://upload.wikimedia.org/wikipedia/commons/6/64/Monomorium_pharaonis_casent0005782_profile_1.jpg"]},
+    {id: 95, srcImg: [], rAns: "Mravenec obecný", src: ["https://www.adera.cz/wp-content/themes/adera/images/mravenecobecny1.jpg","https://upload.wikimedia.org/wikipedia/commons/f/f1/Lasius_Niger.jpg"]},
 ]
