@@ -1,6 +1,6 @@
-var functionVersion = "1.12";
+var functionVersion = "2.12";
 var dataVersion = "1.7";
-var buildVersion = "0";
+var buildVersion = "ERROR";
 var contributors = "A35, H34";
 var gotBuildHash = false;
 

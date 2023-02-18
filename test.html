@@ -34,11 +34,11 @@
 
     <link rel="ico" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="css0.css">
-    <link rel="stylesheet" href="list.css">
-    <script src="list.js"></script>
+    <link rel="stylesheet" href="test.css">
+    <script src="test.js"></script>
     <script src="data.js"></script>
     <script src="debugInfo.js"></script>
-    <title>BIO item list</title>
+    <title>BIO poznávačka</title>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -46,9 +46,18 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <script>loadPage()</script>
     <button id="githubButton" onclick="location.href='https://github.com/antizombie35/poznavacka';">GitHub</button>
-    <button id="toListButton" onclick="location.href='https://antizombie35.github.io/poznavacka/';">Test</button>
+    <button id="toListButton" onclick="location.href='https://antizombie35.github.io/poznavacka/list';">List</button>
     <button id="debugButton" onclick="getDebugInfo()">Debug info</button>
-</body>
+    <div id="picDiv">
+        <img id="pic" src="https://thumbs.gfycat.com/GrippingReflectingBasenji.webp"/>
+    </div>
+    <div id="ansDiv">
+        <p id="ans"></p>
+    </div>
+        <div id="nextButDiv">
+            <button id="nextBut" onclick="nextPic()">Next</button>
+            <p id="infoP"></p>
+        </div>
+    </body>
 </html>

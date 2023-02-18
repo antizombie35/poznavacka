@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cz">
 <head>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -28,13 +28,17 @@
     <link rel="preconnect" href="http://a-svet.cz">
     <link rel="preconnect" href="http://www.chovzvirat.cz">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
     <meta property="og:image" content="https://antizombie35.github.io/poznavacka/iconPic.png" />
     <meta property="og:description" content="Biologická poznávačka chrobáků, motýle a ty včely který mají rádi tu řepku" />
     <meta property="og:title" content="Bio poznávačka" />
 
     <link rel="ico" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="css0.css">
-    <link rel="stylesheet" href="css1.css">
+    <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
     <script src="data.js"></script>
     <script src="debugInfo.js"></script>
@@ -49,15 +53,19 @@
     <button id="githubButton" onclick="location.href='https://github.com/antizombie35/poznavacka';">GitHub</button>
     <button id="toListButton" onclick="location.href='https://antizombie35.github.io/poznavacka/list';">List</button>
     <button id="debugButton" onclick="getDebugInfo()">Debug info</button>
-    <div id="picDiv">
-        <img id="pic" src="https://thumbs.gfycat.com/GrippingReflectingBasenji.webp"/>
+
+    <div id="topPlaceholder"></div>
+    <h1 id="h1">POZNÁVAČKA</h1>
+    <div id="news">
+        <p id="novinkyTitle">NOVINKY</p>
+        <p id="newsText">
+            <li class="newsLine">Je tady tahle objektivně řečeno tahle top stránka <br>
+            <li class="newsLine">Je potřeba někdy nakrmit do poznávačky ryby<br>
+        </p>
     </div>
-    <div id="ansDiv">
-        <p id="ans"></p>
+    <div id="test-list-choice">
+        <button id="list" onclick="location.href='https://antizombie35.github.io/poznavacka/list'"><div id="butText">LIST</div></button>
+        <button id="test" onclick="location.href='https://antizombie35.github.io/poznavacka/test'"><div id="butText">TEST</div></button>
     </div>
-        <div id="nextButDiv">
-            <button id="nextBut" onclick="nextPic()">Next</button>
-            <p id="infoP"></p>
-        </div>
     </body>
 </html>
