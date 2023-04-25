@@ -46,11 +46,11 @@ body{
     font-family: Dejavu Sans;
     font-style: normal;
     font-variant: normal;
-    margin-left: 110px;
+    margin-right: 5px;
     margin-bottom: 10px;
     position:fixed;
     bottom:0;
-    left:0;
+    right:0;
     border-radius: 7px;
     padding-left: 4px;
     padding-right: 4px;

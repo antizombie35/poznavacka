@@ -37,8 +37,8 @@ a {
     vertical-align: middle;
     line-height: 300px;
     font-size: 40px;
-    background-image: linear-gradient(rgba(25,25,25,0.5), rgba(0,0,0,1)), url("https://scontent.fprg5-1.fna.fbcdn.net/v/t39.30808-6/308586195_464500909061461_7305422052762655466_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=l7Oj-XGCqQoAX-2UiOE&_nc_oc=AQkZNvcSxfTns3QLjw-pcVCbTigYQJmAQhjy-idnCEXVxFuHJgUpy5edvTY6m-sWR_0&_nc_ht=scontent.fprg5-1.fna&oh=00_AfCLxHOgGAM7jAGNgL-bWKHLPn7X_ud16g1TawWpmrrw6w&oe=63F5BF33");
-    background-position: center, left;
+    background-image: linear-gradient(rgba(25,25,25,0.5), rgba(0,0,0,1)), url("https://kidshouse.cz/wp-content/uploads/2020/03/Dobrodruzstvi-s-delfiny-1024x576.jpg");
+    background-position: center, top;
     background-repeat: no-repeat;
     background-size:cover;
 }
