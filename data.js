@@ -1,12 +1,12 @@
-var functionVersion = "2.12";
-var dataVersion = "2.0";
+var functionVersion = "2.13";
+var dataVersion = "2.1";
 var buildVersion = "ERROR";
 var contributors = "A35, H34";
 var gotBuildHash = false;
 
 var data = [
     {id: 0, srcImg: [], rAns: "Jeseter malý", src: ["https://upload.wikimedia.org/wikipedia/commons/3/3d/Acipenser_ruthenus_Prague_Vltava_1.jpg","https://rybicky.net/obr/ryby/max/2757.webp","https://www.najdirevir.cz/media/large/upload/fish/6225c7154ccb0198501877.jpg"]},
-	{id: 1, srcImg: [], rAns: "losos obecný", src: ["https://www.najdirevir.cz/media/large/upload/fish/6225c8c81ff9e980303496.jpg","http://www.atlaszvirat.cz/fotogalerie/profil/losos-obecny.jpg","https://upload.wikimedia.org/wikipedia/commons/3/39/Salmo_salar.jpg","https://upload.wikimedia.org/wikipedia/commons/2/28/Salmo_trutta_Trout_Aquarium_Atlanterhavsparken_Norway.jpg"]},
+	{id: 1, srcImg: [], rAns: "losos obecný", src: ["https://www.najdirevir.cz/media/large/upload/fish/6225c8c81ff9e980303496.jpg","https://upload.wikimedia.org/wikipedia/commons/3/39/Salmo_salar.jpg","https://upload.wikimedia.org/wikipedia/commons/2/28/Salmo_trutta_Trout_Aquarium_Atlanterhavsparken_Norway.jpg"]},
 	{id: 2, srcImg: [], rAns: "pstruh obecný", src: ["https://www.rybaribechyne.cz/www/rybaribechyne/fs/atlas/pstruhpotocni201710091540097893.png","https://upload.wikimedia.org/wikipedia/commons/8/88/Salmo_trutta_Ozeaneum_Stralsund_HBP_2010-07-02.jpg","https://upload.wikimedia.org/wikipedia/commons/5/5a/Bachforelle.jpg"]},
 	{id: 3, srcImg: [], rAns: "lipan podhorní", src: ["https://www.trebonsko.cz/admfotky/Trebonsko/Rybareni-a-rybarstvi/Atlas-ryb/lipan_podhorni-500.jpg","https://upload.wikimedia.org/wikipedia/commons/b/b7/Hal_-_Thymallus_thymallus_1.jpg","https://upload.wikimedia.org/wikipedia/commons/b/b1/Thymallus_thymallus2_%28cropped%29.jpg"]},
 	{id: 4, srcImg: [], rAns: "štika obecná", src: ["https://tvorove.cz/wp-content/uploads/2021/06/Stika_obecna_zralok_nasich_vod_1-scaled-e1623352247582-1000x667.jpg","https://www.najdirevir.cz/media/large/upload/fish/6225cb8ba66a3104427575.jpg","https://i00.eu/img/202/1280x1280/81p85t21/85976.webp"]},
@@ -17,7 +17,7 @@ var data = [
 	{id: 9, srcImg: [], rAns: "cejn velký", src: ["https://upload.wikimedia.org/wikipedia/commons/a/a5/Braxen%2C_Iduns_kokbok.jpg","https://upload.wikimedia.org/wikipedia/commons/d/d7/Abramis_brama_Prague_Vltava_1.jpg","https://www.najdirevir.cz/media/large/upload/fish/6225c5d703257608320457.jpg"]},
 	{id: 10, srcImg: [], rAns: "parma obecná", src: ["https://www.mrk.cz/Data/NejNej/8913.jpg","https://www.chytej.cz/foto/atlas_ryb/parma_obecna/parma_obecna.jpg","https://www.najdirevir.cz/media/large/upload/fish/6225c9bfb5cfd514216389.jpg"]},
 	{id: 11, srcImg: [], rAns: "sumec velký", src: ["https://upload.wikimedia.org/wikipedia/commons/e/ec/Silurus_glanis_01.jpg","https://upload.wikimedia.org/wikipedia/commons/3/3b/Wels_Hafen.jpg","https://www.chytej.cz/foto/atlas_ryb/sumec_velky/sumec_velky.jpg"]},
-	{id: 12, srcImg: [], rAns: "treska obecná", src: ["http://oko.yin.cz/77/treska-obecna/treska-obecna.jpg","https://www.rybarskyrozcestnik.cz/wp-content/uploads/2016/01/treska.jpg","https://www.rybarskyrozcestnik.cz/wp-content/uploads/2016/01/tresky-hejno.jpg"]},
+	{id: 12, srcImg: [], rAns: "treska obecná", src: ["https://www.rybarskyrozcestnik.cz/wp-content/uploads/2016/01/treska.jpg","https://www.rybarskyrozcestnik.cz/wp-content/uploads/2016/01/tresky-hejno.jpg"]},
 	{id: 13, srcImg: [], rAns: "úhoř říční", src: ["https://www.zachytame.cz/data/images-xl/11183-uhor3.jpg","https://www.rybaribechyne.cz/www/rybaribechyne/fs/atlas/uhor201710091550194982.png","https://upload.wikimedia.org/wikipedia/commons/5/58/Anguilla_anguilla.jpg"]},
 	{id: 14, srcImg: [], rAns: "okoun říční", src: ["https://upload.wikimedia.org/wikipedia/commons/1/15/Perca_fluviatilis_Prague_Vltava_4.jpg","https://upload.wikimedia.org/wikipedia/commons/f/f5/PercheCommune.jpg","https://rybarska.cz/wp-content/uploads/2021/02/okoun.jpg"]},
 	{id: 15, srcImg: [], rAns: "candát obecný", src: ["https://www.fishmax.cz/ImgP.ashx?co=/imggalery/img1/atlas/vitacandat2.jpg&fd=a5&pa=1","https://www.rybaribechyne.cz/www/rybaribechyne/fs/atlas/candat.png","https://www.trebonsko.cz/admfotky/Trebonsko/Rybareni-a-rybarstvi/Atlas-ryb/candat_obecny-500.jpg"]},
