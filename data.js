@@ -1,9 +1,65 @@
 var functionVersion = "2.14";
-var dataVersion = "3.1";
+var dataVersion = "3.2";
 var buildVersion = "ERROR";
 var contributors = "A35, H34";
 var gotBuildHash = false;
 
+
+var data = [
+    {id: 0, srcImg: [], rAns: "bažant obecný", src: ["https://www.priroda.cz/clanky/foto/bazant.jpg","https://www.biolib.cz/IMG/GAL/2291.jpg","https://media.igurmet.cz/yummy/ed/24/ed24ca3437cdfe3a763e80799003ec52.jpg"]},
+    {id: 1, srcImg: [], rAns: "Brhlík lesní", src: ["https://upload.wikimedia.org/wikipedia/commons/8/88/Eurasian_Nuthatch_%28Sitta_europaea%29%2C_Parc_de_Woluw%C3%A9%2C_Brussels_%2830434538674%29.jpg","https://upload.wikimedia.org/wikipedia/commons/6/68/Nuthatch_%28_In_Explore_19-12-2015_%29_-_Flickr_-_Ron_Vipond.jpg"]},
+    {id: 2, srcImg: [], rAns: "brkoslav severní", src: ["https://izahradkar.cz/wp-content/uploads/2019/12/brkoslavi-hejno-fot-shutterstock-790932238-autor-godi-photo-.jpg","https://izahradkar.cz/wp-content/uploads/2019/12/brkoslav-severni-fot-shutterstock-1340081561-autor-Hannu-Rama.jpg"]},
+    {id: 3, srcImg: [], rAns: "čáp bílý", src: ["https://www.birdlife.cz/wp-content/uploads/2019/07/%C4%8C%C3%A1pi-Jablonn%C3%A9-v-Podje%C5%A1t%C4%9Bd%C3%AD_Chvapil.jpg","https://www.birdlife.cz/wp-content/uploads/2019/02/vitani-chvapil-zmena-velikosti-2.jpg","https://g.denik.cz/47/9d/knez-capweb_denik-galerie-800.jpg"]},
+    {id: 4, srcImg: [], rAns: "čáp černý", src: ["https://www.chovzvirat.cz/images/zvirata/cap-cerny_cyx37sk.jpg","https://www.biolib.cz/IMG/GAL/28075.jpg"]},
+    {id: 5, srcImg: [], rAns: "červenka obecná", src: ["https://temata.rozhlas.cz/sites/default/files/styles/cro_16x9_tablet/public/images/02235593.jpeg?itok=dB_sS1Vu","https://www.zahrada-centrum.cz/images/illustrations/slider/001743.jpg"]},
+    {id: 6, srcImg: [], rAns: "datel černý", src: ["https://www.casopis.ochranaprirody.cz/res/archive/057/007028.jpg?seek=1497815944","https://upload.wikimedia.org/wikipedia/commons/3/31/Schwarzspecht.jpg"]},
+    {id: 7, srcImg: [], rAns: "dlask tlustozobý", src: ["https://www.ifauna.cz/upload/plemena/photos/gallery/202012/744-dlask-tlustozoby_16080148114475.jpg?ver=1608014814","https://upload.wikimedia.org/wikipedia/commons/6/67/Coccothraustes_coccothraustes_1_%28Marek_Szczepanek%29.jpg"]},
+    {id: 8, srcImg: [], rAns: "drop velký", src: ["https://www.casopis.ochranaprirody.cz/res/archive/000055.jpg?seek=1231161467","https://upload.wikimedia.org/wikipedia/commons/4/4b/Drofa_%281%29.jpg"]},
+    {id: 9, srcImg: [], rAns: "drozd zpěvný", src: ["https://upload.wikimedia.org/wikipedia/commons/9/99/Song_thrush_by_Phil_McIver_-_small.jpg","https://www.chovzvirat.cz/images/zvirata/drozd-zpevny_klw57uk.jpg"]},
+    {id: 10, srcImg: [], rAns: "dudek chocholatý", src: ["https://www.priroda.cz/clanky/foto/bohdal-dudek-chocholaty-167.jpg","https://nasregion.cz/wp-content/uploads/2020/05/Upupa_epops_-Coonoor_Tamil_Nadu_India-8.jpg"]},
+    {id: 11, srcImg: [], rAns: "havran polní", src: ["https://www.priroda.cz/clanky/foto/havran-polni.jpg","https://upload.wikimedia.org/wikipedia/commons/6/6f/Corvus_frugilegus_2.jpg"]},
+    {id: 12, srcImg: [], rAns: "holub hřivnáč", src: ["https://www.chovzvirat.cz/images/zvirata/holub-hrivnac_scn41dn.jpg","https://d15-a.sdn.cz/d_15/c_img_QI_O/aEm97.jpeg?fl=cro,0,0,1280,720%7Cres,1200,,1%7Cjpg,80,,1"]},
+    {id: 13, srcImg: [], rAns: "hrdlička zahradní", src: ["https://botany.cz/foto4/streptodeca1.jpg","https://g.denik.cz/122/dc/hrdlicka-zahradni-485612464-jpg_denik-630.jpg"]},
+    {id: 14, srcImg: [], rAns: "hýl obecný", src: ["https://upload.wikimedia.org/wikipedia/commons/a/a7/Pyrrhula_pyrrhula_female_2.jpg","https://upload.wikimedia.org/wikipedia/commons/d/de/Bullfinch_male.jpg"]},
+    {id: 15, srcImg: [], rAns: "chocholouš obecný", src: ["https://upload.wikimedia.org/wikipedia/commons/5/56/Crested_Lark_I-Haryana_IMG_9946.jpg","http://oldcso.birdlife.cz/www.cso.cz/wpimages/foto/8088_v.jpg"]},
+    {id: 16, srcImg: [], rAns: "jiřička obecná", src: ["https://www.birdlife.cz/wp-content/uploads/2020/02/jiricka-obecna_Petr-Saj-768x512.jpg","https://upload.wikimedia.org/wikipedia/commons/0/06/Delichon_urbicum_10.jpg"]},
+    {id: 17, srcImg: [], rAns: "kachna divoká", src: ["https://www.chovzvirat.cz/images/zvirata/kachna-divoka_hru86db.jpg","https://www.priroda.cz/clanky/foto/kachnadivoka-samice.jpg"]},
+    {id: 18, srcImg: [], rAns: "kalous ušatý", src: ["https://www.birdlife.cz/wp-content/uploads/2019/11/ond%C5%99ej-prosick%C3%BD-7.jpg","https://www.fotoaparat.cz/storage/p/20/09/28/1v7qv8xq-dsc-3910-22-denoiseai-clear-3.jpg"]},
+    {id: 19, srcImg: [], rAns: "konipas bílý", src: ["https://www.priroda.cz/clanky/foto/konipas-bily--konipas.jpg","https://upload.wikimedia.org/wikipedia/commons/a/a8/White_Wagtail_-_Motacilla_alba_by_Lars_Falkdalen_Lindahl.jpg"]},
+    {id: 20, srcImg: [], rAns: "kormorán velký", src: ["https://temata.rozhlas.cz/sites/default/files/images/02004052.jpeg","https://g.denik.cz/1/c8/kormoran080916_denik-630-16x9.jpg"]},
+    {id: 21, srcImg: [], rAns: "kos černý", src: ["https://temata.rozhlas.cz/sites/default/files/styles/cro_16x9_tablet/public/images/02303223.jpeg?itok=pFOFYg6m","https://www.chovzvirat.cz/images/zvirata/kos-cerny_tgl15dl.jpg"]},
+    {id: 22, srcImg: [], rAns: "krkavec velký", src: ["https://www.ifauna.cz/upload/plemena/photos/gallery/202011/3470-krkavec-velky_16063361662754.jpg?ver=1606336171","https://upload.wikimedia.org/wikipedia/commons/5/50/Corvus_corax_ad_berlin_090516.jpg"]},
+    {id: 23, srcImg: [], rAns: "krocan domácí", src: ["https://www.zoopraha.cz/images/lexikon/kruta_domaci_DSC_3917_-_Ji%C5%99%C3%AD_Dr%C3%A1bek.jpg","https://www.biolib.cz/IMG/GAL/BIG/197471.jpg"]},
+    {id: 24, srcImg: [], rAns: "labuť velká", src: ["https://botany.cz/foto4/cygolor2.jpg","https://www.zachytame.cz/data/images-l/10948-labut3.jpg"]},
+    {id: 25, srcImg: [], rAns: "ledňáček říční", src: ["https://www.chovzvirat.cz/images/zvirata/lednacek-ricni_pdc47zv.jpg","https://botany.cz/foto4/alcedoattherb4.jpg"]},
+    {id: 26, srcImg: [], rAns: "pěnkava obecná", src: ["https://upload.wikimedia.org/wikipedia/commons/7/7c/Fringilla_coelebs_chaffinch_male_edit2.jpg","https://upload.wikimedia.org/wikipedia/commons/1/18/Fulda_Buchfinkweibchen_Juni_2012.JPG"]},
+    {id: 27, srcImg: [], rAns: "poštolka obecná", src: ["https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Common_kestrel_falco_tinnunculus.jpg/270px-Common_kestrel_falco_tinnunculus.jpg","https://www.biolib.cz/IMG/GAL/2380.jpg"]},
+    {id: 28, srcImg: [], rAns: "puštík obecný", src: ["https://upload.wikimedia.org/wikipedia/commons/5/55/Strix_aluco_3_%28Martin_Mecnarowski%29.jpg","https://www.birdlife.cz/wp-content/uploads/2019/11/ond%C5%99ej-prosick%C3%BD-1.jpg"]},
+    {id: 29, srcImg: [], rAns: "rehek domácí", src: ["https://temata.rozhlas.cz/sites/default/files/styles/cro_16x9_tablet/public/images/02274046.jpeg?itok=7RHCyHc-","https://upload.wikimedia.org/wikipedia/commons/2/2e/PhoenicurusOchrurosGuntherHasler01.jpg"]},
+    {id: 30, srcImg: [], rAns: "rorýs obecný", src: ["https://upload.wikimedia.org/wikipedia/commons/b/be/Apus_apus_-Barcelona%2C_Spain-8_%281%29.jpg","https://www.biolib.cz/IMG/GAL/60705.jpg"]},
+    {id: 31, srcImg: [], rAns: "skorec vodní", src: ["https://www.priroda.cz/clanky/foto/bohdal-skorec-vodni.jpg","https://upload.wikimedia.org/wikipedia/commons/5/5d/Eurasian_White-fronted_Dipper%2C_C_cinclus.JPG"]},
+    {id: 32, srcImg: [], rAns: "sojka obecná", src: ["https://www.chovzvirat.cz/images/zvirata/sojka-obecna_bhy81el.jpg","https://upload.wikimedia.org/wikipedia/commons/6/6d/Garrulus_glandarius_1_Luc_Viatour.jpg"]},
+    {id: 33, srcImg: [], rAns: "sokol stěhovavý", src: ["https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Falco_peregrinus_-_01.jpg/1200px-Falco_peregrinus_-_01.jpg","https://www.casopis.ochranaprirody.cz/res/archive/074/008721.jpg?seek=1566812430"]},
+    {id: 34, srcImg: [], rAns: "sova pálená", src: ["https://upload.wikimedia.org/wikipedia/commons/1/17/Barn_Owl%2C_Lancashire.jpg","https://g.denik.cz/122/c8/sova-palena-let_398936221-jpg_denik-630.jpg"]},
+    {id: 35, srcImg: [], rAns: "stehlík obecný", src: ["https://www.ifauna.cz/upload/plemena/photos/gallery/202204/576-stehlik-obecny_16495037502725.jpg?ver=1649503751","https://upload.wikimedia.org/wikipedia/commons/f/fd/European_Goldfinch_on_Spear_Thistle.jpg"]},
+    {id: 36, srcImg: [], rAns: "straka obecná", src: ["https://temata.rozhlas.cz/sites/default/files/styles/lightbox/public/images/96af854da74b7051fc8d68112d750711.JPG?itok=nUnmzEpS","https://upload.wikimedia.org/wikipedia/commons/9/97/2013.03.24.-2-Mannheim_Vogelstang-Elster.jpg"]},
+    {id: 37, srcImg: [], rAns: "strakapoud velký", src: ["https://www.zelenadomacnost.com/blog/wp-content/uploads/2022/11/75-female-great-spotted-woodpecker-feeding-one-its-juveniles.jpg","https://upload.wikimedia.org/wikipedia/commons/7/79/DendrocoposMajor.jpg"]},
+    {id: 38, srcImg: [], rAns: "strnad obecný", src: ["https://upload.wikimedia.org/wikipedia/commons/9/93/Emberiza_citrinella_1_%28Marek_Szczepanek%29.jpg","https://temata.rozhlas.cz/sites/default/files/styles/lightbox/public/images/02871393.jpeg?itok=JbU803y_"]},
+    {id: 39, srcImg: [], rAns: "střízlík obecný", src: ["https://upload.wikimedia.org/wikipedia/commons/c/c7/%D0%9A%D1%80%D0%B0%D0%BF%D0%B8%D0%B2%D0%BD%D0%B8%D0%BA_-_%D0%BE%D1%80%D0%B5%D1%88%D0%B5%D0%BA_%28Troglodytes_troglodytes%29%2C_%D0%91%D0%B8%D1%82%D1%86%D0%B5%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D0%BB%D0%B5%D1%81.jpg","https://upload.wikimedia.org/wikipedia/commons/6/67/Juvenile_Wren_%28Troglodytes_troglodytes%29_%2819%29.JPG"]},
+    {id: 40, srcImg: [], rAns: "sýček obecný", src: ["https://www.ifauna.cz/upload/clanky/photos/gallery/201901/8375-sycek-obecny_15556424352953.jpg?ver=1555642435","https://www.zoobrno.cz/wh/960-720/img/catalog/img/athene-noctua.jpg"]},
+    {id: 41, srcImg: [], rAns: "sýkora koňadra", src: ["https://upload.wikimedia.org/wikipedia/commons/6/65/Parus_major_2_Luc_Viatour.jpg","https://upload.wikimedia.org/wikipedia/commons/8/86/GreatTit002.jpg"]},
+    {id: 42, srcImg: [], rAns: "sýkora modřinka", src: ["https://temata.rozhlas.cz/sites/default/files/styles/cro_16x9_tablet/public/images/02308100.jpeg?itok=xYLmcMgp","https://upload.wikimedia.org/wikipedia/commons/8/86/Eurasian_blue_tit_Lancashire.jpg"]},
+    {id: 43, srcImg: [], rAns: "špaček obecný", src: ["https://www.zoopraha.cz/images/lexikon/spacek_obecny_DSC_4299.jpg","https://upload.wikimedia.org/wikipedia/commons/5/5a/Sturnus_vulgaris_2_%28Marek_Szczepanek%29.jpg"]},
+    {id: 44, srcImg: [], rAns: "tetřev hlušec", src: ["https://www.chovzvirat.cz/images/zvirata/tetrev-hlusec_qwx84ih.jpg","https://www.oddilscarabeus.cz/sites/oddilscarabeus.cz/files/2018/uvodnik/018614.jpg"]},
+    {id: 45, srcImg: [], rAns: "vlaštovka obecná", src: ["https://upload.wikimedia.org/wikipedia/commons/f/f3/Barn_Swallow_by_Stefan_Berndtsson.jpg","https://temata.rozhlas.cz/sites/default/files/styles/cro_16x9_tablet/public/images/02274980.jpeg?itok=ZWlmBGCX"]},
+    {id: 46, srcImg: [], rAns: "volavka popelavá", src: ["https://www.priroda.cz/clanky/foto/volavka-popelava.jpg","https://botany.cz/foto3/ardeacin9.jpg"]},
+    {id: 47, srcImg: [], rAns: "vrabec domácí", src: ["https://upload.wikimedia.org/wikipedia/commons/5/52/House_Sparrow%2C_England_-_May_09.jpg","https://upload.wikimedia.org/wikipedia/commons/c/c8/House_Sparrow_%2850850475696%29.jpg"]},
+    {id: 48, srcImg: [], rAns: "výr velký", src: ["https://www.zooliberec.cz/wp-content/uploads/2021/01/vyr_1.jpg","https://www.zootabor.eu/wp-content/uploads/2015/07/Dollarphotoclub_67461981-682x1024.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Dramatic_Views_of_Hurricane_Florence_from_the_International_Space_Station_From_9_12_%2842828603210%29.jpg/1200px-Dramatic_Views_of_Hurricane_Florence_from_the_International_Space_Station_From_9_12_%2842828603210%29.jpg"]},
+    {id: 49, srcImg: [], rAns: "žluna zelená", src: ["https://upload.wikimedia.org/wikipedia/commons/3/38/Gr%C3%BCnspecht_Picus_viridis.jpg","https://upload.wikimedia.org/wikipedia/commons/1/1b/Picus_viridis_juv%28ThKraft%29.jpg"]},
+    {id: 50, srcImg: [], rAns: "žluva hajní", src: ["https://upload.wikimedia.org/wikipedia/commons/6/6f/Loriot_d%27Europe_by_Michel_Idre.jpg","https://www.chovzvirat.cz/images/zvirata/zluva-hajni_efq63eu.jpg"]},
+]
+
+/*
 var data = [
     {id: 0, srcImg: [], rAns: "Archeopteryx", src: ["https://ichef.bbci.co.uk/news/976/mcs/media/images/75003000/jpg/_75003400_e4450111-artwork_of_an_archaeopteryx,_the_first_bird-spl.jpg","https://cdn.myshoptet.com/usr/www.fosilie-shop.cz/user/documents/upload/atlas%20dinosauru/archaeopteryx-litographica.jpg"]},
     {id: 1, srcImg: [], rAns: "pštros dvouprstý", src: ["https://www.zoopraha.cz/images/lexikon/pstros_dvouprsty__TTT5430_-_Tomas_Adamec.jpg","https://www.chovzvirat.cz/images/zvirata/pstros-dvouprsty_tcm57ht.jpg"]},
@@ -113,6 +169,7 @@ var data = [
     {id: 106, srcImg: [], rAns: "budníček menší", src: ["https://upload.wikimedia.org/wikipedia/commons/c/cc/Chiffchaff_-_Phylloscopus_collybita.jpg","https://www.chovzvirat.cz/images/zvirata/budnicek-mensi_zxn97cf.jpg"]},
     {id: 107, srcImg: [], rAns: "strnad obecný", src: ["https://upload.wikimedia.org/wikipedia/commons/9/93/Emberiza_citrinella_1_%28Marek_Szczepanek%29.jpg","https://temata.rozhlas.cz/sites/default/files/styles/lightbox/public/images/02871393.jpeg?itok=JbU803y_"]},
 ]
+*/
 
 /*
 var data = [
