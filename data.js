@@ -1,10 +1,12 @@
-var functionVersion = "2.14";
-var dataVersion = "3.2";
-var buildVersion = "ERROR";
-var contributors = "A35, H34";
+var functionVersion = "2.14"; // version of underlying system
+var dataVersion = "3.2"; // version of data
+var buildVersion = "ERROR"; //generated at runtime
+var contributors = "A35, H34"; //List of contributors
 var gotBuildHash = false;
 
+//Example data
 
+/*
 var data = [
     {id: 0, srcImg: [], rAns: "bažant obecný", src: ["https://www.priroda.cz/clanky/foto/bazant.jpg","https://www.biolib.cz/IMG/GAL/2291.jpg","https://media.igurmet.cz/yummy/ed/24/ed24ca3437cdfe3a763e80799003ec52.jpg"]},
     {id: 1, srcImg: [], rAns: "Brhlík lesní", src: ["https://upload.wikimedia.org/wikipedia/commons/8/88/Eurasian_Nuthatch_%28Sitta_europaea%29%2C_Parc_de_Woluw%C3%A9%2C_Brussels_%2830434538674%29.jpg","https://upload.wikimedia.org/wikipedia/commons/6/68/Nuthatch_%28_In_Explore_19-12-2015_%29_-_Flickr_-_Ron_Vipond.jpg"]},
@@ -58,7 +60,7 @@ var data = [
     {id: 49, srcImg: [], rAns: "žluna zelená", src: ["https://upload.wikimedia.org/wikipedia/commons/3/38/Gr%C3%BCnspecht_Picus_viridis.jpg","https://upload.wikimedia.org/wikipedia/commons/1/1b/Picus_viridis_juv%28ThKraft%29.jpg"]},
     {id: 50, srcImg: [], rAns: "žluva hajní", src: ["https://upload.wikimedia.org/wikipedia/commons/6/6f/Loriot_d%27Europe_by_Michel_Idre.jpg","https://www.chovzvirat.cz/images/zvirata/zluva-hajni_efq63eu.jpg"]},
 ]
-
+*/
 /*
 var data = [
     {id: 0, srcImg: [], rAns: "Archeopteryx", src: ["https://ichef.bbci.co.uk/news/976/mcs/media/images/75003000/jpg/_75003400_e4450111-artwork_of_an_archaeopteryx,_the_first_bird-spl.jpg","https://cdn.myshoptet.com/usr/www.fosilie-shop.cz/user/documents/upload/atlas%20dinosauru/archaeopteryx-litographica.jpg"]},
